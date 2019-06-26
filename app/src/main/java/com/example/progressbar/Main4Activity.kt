@@ -3,6 +3,7 @@ package com.example.progressbar
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import kotlinx.android.synthetic.main.activity_main.*
 
 class Main4Activity : AppCompatActivity() {
@@ -16,5 +17,28 @@ class Main4Activity : AppCompatActivity() {
         btn.setOnClickListener{
             startActivity(Intent(this@Main4Activity, Main5Activity::class.java))
         }
+
+        progressBarHorizontal.progress = 46
+
+        var progressStatus = 0;
+
+        val handler: Handler = Handler()
+
+        Thread(Runnable {
+            while (progressStatus < 69) {
+                progressStatus += 1
+
+                try {
+                    Thread.sleep(10)
+                } catch (e: InterruptedException) {
+                    e.printStackTrace()
+                }
+
+                handler.post(Runnable {
+                    progressBarHorizontal.progress = progressStatus
+
+                })
+            }
+        }).start()
     }
 }
