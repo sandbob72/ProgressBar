@@ -6,15 +6,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".MainActivity">
-
-
-
+        tools:context=".Main3Activity">
     <ImageView
-            android:id="@+id/p1"
             android:layout_margin="10dp"
             android:layout_gravity="center"
-            android:src="@drawable/p1"
+            android:src="@drawable/p3"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"/>
 
@@ -25,7 +21,5 @@
             android:layout_marginTop="50dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
-
-
 
 </LinearLayout>

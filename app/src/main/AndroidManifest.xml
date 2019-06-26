@@ -9,6 +9,26 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".Main6Activity"
+                  android:parentActivityName=".Main5Activity">
+        </activity>
+        <activity
+                android:name=".Main5Activity"
+                android:parentActivityName=".Main4Activity">
+        </activity>
+        <activity
+                android:name=".Main4Activity"
+                android:parentActivityName=".Main3Activity">
+        </activity>
+        <activity
+                android:name=".Main3Activity"
+                android:parentActivityName=".Main2Activity">
+        </activity>
+        <activity
+                android:name=".Main2Activity"
+                android:label="@string/title_activity_main2"
+                android:parentActivityName=".MainActivity">
+        </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
