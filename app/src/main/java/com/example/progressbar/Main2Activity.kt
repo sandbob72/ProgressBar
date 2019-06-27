@@ -23,7 +23,7 @@ class Main2Activity : AppCompatActivity() {
 
         progressBarHorizontal.progress = 0
 
-        var progressStatus = 0;
+        var progressStatus = 0
 
         val handler: Handler = Handler()
 
@@ -32,7 +32,7 @@ class Main2Activity : AppCompatActivity() {
                 progressStatus += 1
 
                 try {
-                    Thread.sleep(10)
+                    Thread.sleep(80)
                 } catch (e: InterruptedException) {
                     e.printStackTrace()
                 }
