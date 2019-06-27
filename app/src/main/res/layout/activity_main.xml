@@ -8,8 +8,6 @@
         android:orientation="vertical"
         tools:context=".MainActivity">
 
-
-
     <ImageView
             android:id="@+id/p1"
             android:layout_margin="10dp"
@@ -22,7 +20,7 @@
             android:id="@+id/progressBarHorizontal"
             android:layout_gravity="center"
             android:layout_width="302dp"
-            android:layout_height="15dp"
+            android:layout_height="wrap_content"
             android:layout_margin="30dp"
             style="@style/ProgressBar1"/>
 
@@ -46,32 +44,6 @@
                android:layout_height="wrap_content"/>
 
    </LinearLayout>
-
-
-    <ProgressBar
-            android:progress="0"
-            android:id="@+id/progressBarHorizontal2"
-            android:layout_gravity="center"
-            android:layout_width="302dp"
-            android:layout_height="15dp"
-            android:layout_margin="30dp"
-            style="@style/ProgressBar1"/>
-
-    <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-        <Button
-                android:id="@+id/btnProgressBarHorizontal2"
-                android:layout_weight="1"
-                android:layout_margin="10dp"
-                android:layout_gravity="center"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="bNEXT"
-                android:text="NEXT" />
-    </LinearLayout>
-
 
     <Button
             android:id="@+id/btn"

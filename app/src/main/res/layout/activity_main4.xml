@@ -20,7 +20,7 @@
             android:id="@+id/progressBarHorizontal"
             android:layout_gravity="center"
             android:layout_width="302dp"
-            android:layout_height="15dp"
+            android:layout_height="wrap_content"
             android:layout_margin="30dp"
             style="@style/ProgressBar4"/>
 

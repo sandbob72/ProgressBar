@@ -14,11 +14,6 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    var isStartedBnext = false
-    var isStartedBpre = false
-    var progressStatus2 = 0
-    var handLer: Handler? = null
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -87,33 +82,5 @@ class MainActivity : AppCompatActivity() {
         //--------------------------------------------------------------------------------------//
         //--------------------------------------------------------------------------------------//
 
-        handLer = Handler(Handler.Callback {
-            if (isStartedBnext) {
-                progressStatus2++
-            }
-            if (progressStatus2 == 25) {
-                isStartedBnext = false
-            }
-            if (progressStatus2 == 50) {
-                isStartedBnext = false
-            }
-            if (progressStatus2 == 75) {
-                isStartedBnext = false
-            }
-            if (progressStatus2 == 100) {
-                isStartedBnext = false
-            }
-            progressBarHorizontal2.progress = progressStatus2
-            handLer?.sendEmptyMessageDelayed(0, 80)
-
-            true
-        })
-        handLer?.sendEmptyMessage(0)
-
-    }
-
-
-    fun bNEXT(view: View) {
-        isStartedBnext = !isStartedBnext
     }
 }
