@@ -6,7 +6,7 @@
     <item android:id="@android:id/progress">
         <clip>
             <scale android:scaleWidth="0%">
-                <bitmap android:src="@drawable/p1"/>
+                <bitmap android:src="@drawable/p6"/>
             </scale>
         </clip>
     </item>
